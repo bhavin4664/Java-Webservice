@@ -1,0 +1,13 @@
+ curl –-request POST -–data "id=3&dr=JohnDr!2&paients=MaySick!CC001,LoySick!CC002"  http://localhost:8080/drpatients/resourcesDr/create
+   
+   curl --request GET http://localhost:8080/drpatients/resourcesDr/plain
+   
+   curl --request GET http://localhost:8080/drpatients/resourcesDr/plain/1
+
+   curl --request GET http://localhost:8080/drpatients/resourcesDr/xml
+   
+   curl --request GET http://localhost:8080/drpatients/resourcesDr/xml/1   
+
+   curl –-request PUT -–data "id=3&dr=JamesDr!2"  http://localhost:8080/drpatients/resourcesDr/update
+
+   curl --request DELETE http://localhost:8080/drpatients/resourcesDr/delete/3
